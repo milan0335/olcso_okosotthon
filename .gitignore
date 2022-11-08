@@ -7,8 +7,14 @@
 secrets.yaml
 
 .ssh
-home-assistant.log*
+home-assistant.log
 id_rsa*
 .cloud
 .storage
 .google.token
+home-assistant_V2
+*.log
+*.log.txt
+custom_components/
+notebooks/
+
