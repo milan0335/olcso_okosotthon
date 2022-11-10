@@ -1,4 +1,1 @@
-2022-11-08 15:08:26.203 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `/bin/bash/ pushupdates.sh`, return code: 127
-NoneType: None
-2022-11-08 15:12:14.208 ERROR (MainThread) [homeassistant.components.shell_command] Error running command: `/bin/bash/ pushupdates.sh`, return code: 127
-NoneType: None
+2022-11-10 10:42:04.952 WARNING (MainThread) [homeassistant.config_entries] Config entry 'MiWiFi router' for upnp integration not ready yet: Device not discovered: uuid:3d969c58-f0ef-4ca2-ab70-90257f347922::urn:schemas-upnp-org:device:InternetGatewayDevice:1; Retrying in background

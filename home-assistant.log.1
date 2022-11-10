@@ -1,4 +1,83 @@
-2022-11-08 13:36:05.118 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from supervisor (172.30.32.2). Requested URL: '/auth/token'. (HomeAssistantSupervisor/2022.10.2 aiohttp/3.8.3 Python/3.10)
-2022-11-08 13:36:16.249 WARNING (MainThread) [homeassistant.setup] Setup of hassio is taking over 10 seconds.
-2022-11-08 13:36:16.617 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /supervisor/options request
-2022-11-08 15:07:00.617 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /homeassistant/restart request
+2022-11-10 10:13:12.605 ERROR (MainThread) [homeassistant.components.upnp] Error fetching MiWiFi router data: Unable to communicate with IGD at: http://192.168.31.1:5351/rootDesc.xml
+2022-11-10 10:24:12.043 ERROR (MainThread) [homeassistant.components.upnp] Error fetching MiWiFi router data: Unable to communicate with IGD at: http://192.168.31.1:5351/rootDesc.xml
+2022-11-10 10:38:35.410 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-11-10 10:38:35.589 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://remotestate.nabucasa.com/request_sync (404)
+2022-11-10 10:38:56.236 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://alexa-api.nabucasa.com/access_token (400)
+2022-11-10 10:38:56.248 ERROR (MainThread) [homeassistant.util.logging] Exception in _async_prefs_updated called from
+   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
+    sys.exit(main())
+  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
+    exit_code = runner.run(runtime_conf)
+  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
+    return loop.run_until_complete(setup_and_run_hass(runtime_config))
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+    self.run_forever()
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+    handle._run()
+  File "/usr/local/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/http_api.py", line 394, in websocket_update_prefs
+    await cloud.client.prefs.async_update(**changes)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/prefs.py", line 115, in async_update
+    await self._save_prefs(prefs)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/prefs.py", line 319, in _save_prefs
+    self._hass.async_create_task(async_create_catching_coro(listener(self)))
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 253, in _async_prefs_updated
+    await self.async_sync_entities()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 325, in async_sync_entities
+    return await self._sync_helper(to_update, to_remove)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 336, in _sync_helper
+    await self.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 187, in async_get_access_token
+    raise alexa_errors.RequireRelink
+homeassistant.components.alexa.errors.RequireRelink
+
+2022-11-10 10:39:41.666 ERROR (MainThread) [hass_nabucasa.remote] Can't handle request-connection without backend
+2022-11-10 10:39:41.675 ERROR (MainThread) [homeassistant.util.logging] Exception in remote_prefs_updated called from
+   File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
+    sys.exit(main())
+  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
+    exit_code = runner.run(runtime_conf)
+  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
+    return loop.run_until_complete(setup_and_run_hass(runtime_config))
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 633, in run_until_complete
+    self.run_forever()
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 1896, in _run_once
+    handle._run()
+  File "/usr/local/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.10/site-packages/hass_nabucasa/iot.py", line 107, in _async_handle_handler_message
+    result = await handler(self.cloud, message.get("payload"))
+  File "/usr/local/lib/python3.10/site-packages/hass_nabucasa/iot.py", line 190, in async_handle_remote_sni
+    await cloud.client.async_cloud_connect_update(True)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/client.py", line 197, in async_cloud_connect_update
+    await self._prefs.async_update(remote_enabled=connect)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/prefs.py", line 115, in async_update
+    await self._save_prefs(prefs)
+  File "/usr/src/homeassistant/homeassistant/components/cloud/prefs.py", line 319, in _save_prefs
+    self._hass.async_create_task(async_create_catching_coro(listener(self)))
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/cloud/__init__.py", line 316, in remote_prefs_updated
+    await cloud.remote.connect()
+  File "/usr/local/lib/python3.10/site-packages/hass_nabucasa/remote.py", line 307, in connect
+    raise RemoteNotConnected()
+hass_nabucasa.remote.RemoteNotConnected
+
+2022-11-10 10:41:00.091 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /homeassistant/restart request
