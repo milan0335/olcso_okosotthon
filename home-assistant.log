@@ -1,38 +1,157 @@
-2022-11-12 05:57:31.220 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-11-12 05:57:31.223 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miot which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-11-12 05:57:31.225 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_cloud_map_extractor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-11-12 05:57:42.833 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:57:42.867 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:57:43.610 ERROR (MainThread) [homeassistant.components.camera] Entity id already exists - ignoring: camera.xiaomi_cloud_map_extractor
-2022-11-12 05:59:43.671 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/config/lovelace/resources:0:0 Uncaught 
-2022-11-12 05:59:51.239 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/lovelace/testbench:0:0 Uncaught 
-2022-11-12 06:02:41.828 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/hacsfiles/lovelace-xiaomi-vacuum-map-card/xiaomi-vacuum-map-card.js:1052:5206 Uncaught TypeError: Cannot read properties of undefined (reading 'map_source')
-2022-11-12 06:02:43.745 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/hacsfiles/lovelace-xiaomi-vacuum-map-card/xiaomi-vacuum-map-card.js:1052:5206 Uncaught TypeError: Cannot read properties of undefined (reading 'map_source')
-2022-11-12 06:03:55.763 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Stream ended; no additional packets
-2022-11-12 06:04:07.700 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:04:07.742 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:04:28.124 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:04:28.134 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:13:44.516 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:13:44.520 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:13:54.868 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:13:54.883 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:14:15.222 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:14:15.229 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:14:45.570 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:14:45.579 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:15:25.924 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:15:25.933 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:16:16.282 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:16:16.291 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:17:16.707 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:17:16.717 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:18:27.127 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:18:27.136 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:19:47.543 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:19:47.553 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:21:17.997 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:21:18.006 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 06:22:07.149 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Unable to determine action @ data['action'][3]. Got None. (See ?, line ?). 
-2022-11-12 06:22:58.421 WARNING (stream_worker) [libav.https] HTTP error 403 Forbidden
-2022-11-12 06:22:58.429 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_FORBIDDEN, Server returned 403 Forbidden (access denied)) https://de02.livestreaming.io.mi.com/hlstranscoder/GCBiOTFiMTk1NzRlNTQ0NGI3OGIzODI3NjY0MzhmYTEwZhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
+2022-11-12 06:34:15.228 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-11-12 06:34:15.230 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miot which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-11-12 06:34:15.232 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_cloud_map_extractor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-11-12 06:34:25.419 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Unable to determine action @ data['action'][3]. Got None. (See ?, line ?). 
+2022-11-12 06:34:25.978 ERROR (MainThread) [homeassistant.components.camera] Entity id already exists - ignoring: camera.xiaomi_cloud_map_extractor
+2022-11-12 06:36:56.687 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Unable to determine action @ data['action'][3]. Got None. (See ?, line ?). 
+2022-11-12 06:37:36.141 ERROR (MainThread) [homeassistant.components.camera] Entity id already exists - ignoring: camera.xiaomi_cloud_map_extractor
+2022-11-12 06:37:46.250 WARNING (MainThread) [homeassistant.helpers.entity] Update of camera.xiaomi_cloud_map_extractor is taking over 10 seconds
+2022-11-12 06:49:22.852 ERROR (MainThread) [frontend.js.latest.202211021] https://h1u4ocjqe1v6b3hkob02bn9u5jbfyzlr.ui.nabu.casa/lovelace/default_view:0:0 Uncaught 
+2022-11-12 06:49:22.901 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 06:49:39.914 WARNING (MainThread) [homeassistant.helpers.entity] Update of camera.chuangmi_021a04_d57e_camera_control is taking over 10 seconds
+2022-11-12 06:50:54.078 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [547754284400] 'dict' object has no attribute 'actions'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 200, in handle_call_service
+    await hass.services.async_call(
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1744, in async_call
+    task.result()
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1781, in _execute_service
+    await cast(Callable[[ServiceCall], Awaitable[None]], handler.job.target)(
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 419, in async_service_handler
+    await getattr(ent, fun)(**params)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1924, in async_miot_action
+    return await self.hass.async_add_executor_job(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1879, in miot_action
+    action = self._miot_service.spec.services.get(siid, {}).actions.get(aiid)
+AttributeError: 'dict' object has no attribute 'actions'
+2022-11-12 06:51:00.047 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [547754284400] 'dict' object has no attribute 'actions'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 200, in handle_call_service
+    await hass.services.async_call(
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1744, in async_call
+    task.result()
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1781, in _execute_service
+    await cast(Callable[[ServiceCall], Awaitable[None]], handler.job.target)(
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 419, in async_service_handler
+    await getattr(ent, fun)(**params)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1924, in async_miot_action
+    return await self.hass.async_add_executor_job(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1879, in miot_action
+    action = self._miot_service.spec.services.get(siid, {}).actions.get(aiid)
+AttributeError: 'dict' object has no attribute 'actions'
+2022-11-12 06:51:32.079 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [547754284400] 'dict' object has no attribute 'actions'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 200, in handle_call_service
+    await hass.services.async_call(
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1744, in async_call
+    task.result()
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1781, in _execute_service
+    await cast(Callable[[ServiceCall], Awaitable[None]], handler.job.target)(
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 419, in async_service_handler
+    await getattr(ent, fun)(**params)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1924, in async_miot_action
+    return await self.hass.async_add_executor_job(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1879, in miot_action
+    action = self._miot_service.spec.services.get(siid, {}).actions.get(aiid)
+AttributeError: 'dict' object has no attribute 'actions'
+2022-11-12 06:52:10.721 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [547754284400] 'dict' object has no attribute 'actions'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 200, in handle_call_service
+    await hass.services.async_call(
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1744, in async_call
+    task.result()
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1781, in _execute_service
+    await cast(Callable[[ServiceCall], Awaitable[None]], handler.job.target)(
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 419, in async_service_handler
+    await getattr(ent, fun)(**params)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1924, in async_miot_action
+    return await self.hass.async_add_executor_job(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1879, in miot_action
+    action = self._miot_service.spec.services.get(siid, {}).actions.get(aiid)
+AttributeError: 'dict' object has no attribute 'actions'
+2022-11-12 07:00:16.467 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2022-11-12 07:00:16.475 WARNING (SyncWorker_0) [custom_components.xiaomi_miot.vacuum] Lili(roidmi.vacuum.v60): Set miot property {'did': 'roidmi.vacuum.v60', 'siid': 9, 'piid': 2, 'value': '0'} failed: Unable to recover failed command
+2022-11-12 07:00:26.480 WARNING (MainThread) [homeassistant.helpers.entity] Update of vacuum.roidmi_v60_8a32_robot_cleaner is taking over 10 seconds
+2022-11-12 07:00:30.011 ERROR (MainThread) [custom_components.xiaomi_miot.vacuum] Lili(roidmi.vacuum.v60): Got MiioException while fetching the state: {'code': -9998, 'message': 'user ack invalid'}, mapping: {'vacuum.status': {'siid': 2, 'piid': 1}, 'vacuum.fault': {'siid': 2, 'piid': 2}, 'vacuum.mode': {'siid': 2, 'piid': 4}, 'vacuum.sweep_type': {'siid': 2, 'piid': 8}, 'vacuum.on': {'siid': 2, 'piid': 10}, 'sweep.sweep_mode': {'siid': 14, 'piid': 1}, 'custom.mop': {'siid': 8, 'piid': 1}, 'custom.work_station_freq': {'siid': 8, 'piid': 2}, 'custom.timing': {'siid': 8, 'piid': 6}, 'custom.clean_area': {'siid': 8, 'piid': 7}, 'custom.uid': {'siid': 8, 'piid': 8}, 'custom.auto_boost': {'siid': 8, 'piid': 9}, 'custom.forbid_mode': {'siid': 8, 'piid': 10}, 'custom.water_level': {'siid': 8, 'piid': 11}, 'custom.total_clean_time': {'siid': 8, 'piid': 13}, 'custom.total_clean_areas': {'siid': 8, 'piid': 14}, 'custom.clean_counts': {'siid': 8, 'piid': 18}, 'custom.clean_time': {'siid': 8, 'piid': 19}, 'custom.double_clean': {'siid': 8, 'piid': 20}, 'custom.edge_sweep': {'siid': 8, 'piid': 21}, 'custom.led_switch': {'siid': 8, 'piid': 22}, 'custom.lidar_collision': {'siid': 8, 'piid': 23}, 'custom.station_key': {'siid': 8, 'piid': 24}, 'custom.station_led': {'siid': 8, 'piid': 25}, 'custom.current_audio': {'siid': 8, 'piid': 26}, 'custom.progress': {'siid': 8, 'piid': 28}, 'custom.station_type': {'siid': 8, 'piid': 29}, 'custom.voice_conf': {'siid': 8, 'piid': 30}, 'brush_left_time-15-1': {'siid': 15, 'piid': 1}, 'brush_life_level-15-2': {'siid': 15, 'piid': 2}, 'brush_left_time-12-1': {'siid': 12, 'piid': 1}, 'brush_life_level-12-2': {'siid': 12, 'piid': 2}, 'brush_cleaner.brush_left_time': {'siid': 11, 'piid': 1}, 'brush_cleaner.brush_life_level': {'siid': 11, 'piid': 2}, 'filter.filter_life_level': {'siid': 10, 'piid': 1}, 'filter.filter_left_time': {'siid': 10, 'piid': 2}, 'speaker.volume': {'siid': 9, 'piid': 1}, 'speaker.mute': {'siid': 9, 'piid': 2}, 'battery_level': {'siid': 3, 'piid': 1}, 'battery.charging_state': {'siid': 3, 'piid': 2}}, max_properties: 10/40
+2022-11-12 07:15:29.911 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:15:30.873 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:15:39.969 WARNING (MainThread) [homeassistant.helpers.entity] Update of camera.chuangmi_021a04_d57e_camera_control is taking over 10 seconds
+2022-11-12 07:15:41.278 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:15:43.030 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:15:45.587 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:16:05.482 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:16:08.754 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:16:11.148 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/lovelace/default_view:0:0 Uncaught 
+2022-11-12 07:16:11.532 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:16:17.658 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:16:28.682 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:16:29.168 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:16:29.172 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:16:29.183 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:16:40.145 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:16:40.623 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:16:40.627 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:16:40.637 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:16:41.610 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:16:43.954 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:17:00.227 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:17:01.666 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:17:02.242 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:17:02.244 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:17:02.255 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:17:22.760 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:17:25.620 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/lovelace/default_view?edit=1:0:0 Uncaught 
+2022-11-12 07:17:25.980 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:17:33.285 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:17:33.720 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:17:33.722 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:17:33.733 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:17:39.977 WARNING (MainThread) [homeassistant.helpers.entity] Update of camera.chuangmi_021a04_d57e_camera_control is taking over 10 seconds
+2022-11-12 07:18:08.979 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/lovelace/default_view:0:0 Uncaught 
+2022-11-12 07:18:09.396 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:18:12.267 ERROR (MainThread) [frontend.js.latest.202211021] http://homeassistant.local:8123/lovelace/default_view:0:0 Uncaught 
+2022-11-12 07:18:12.676 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:18:14.741 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:18:15.246 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:18:15.250 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:18:15.259 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:18:20.595 ERROR (MainThread) [frontend.js.latest.202211021] https://h1u4ocjqe1v6b3hkob02bn9u5jbfyzlr.ui.nabu.casa/frontend_latest/app.92b32e63.js:850:114174 Error: Failed to execute 'define' on 'CustomElementRegistry': the name "xiaomi-vacuum-map-card-editor" has already been used with this registry
+2022-11-12 07:18:21.076 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:19:06.310 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:19:06.794 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:19:06.797 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:19:06.808 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:19:11.352 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:19:17.046 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:19:55.679 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:20:01.465 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:20:07.889 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:20:08.356 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:20:08.359 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:20:08.370 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:20:18.735 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:20:26.973 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:21:18.738 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:21:19.376 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:21:19.850 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:21:19.854 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:21:19.864 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:21:21.132 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:21:23.926 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:21:27.918 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:21:39.984 WARNING (MainThread) [homeassistant.helpers.entity] Update of camera.chuangmi_021a04_d57e_camera_control is taking over 10 seconds
+2022-11-12 07:21:43.779 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:22:25.662 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:22:28.746 ERROR (MainThread) [homeassistant.components.camera] Error requesting stream: camera.chuangmi_021a04_d57e_camera_control does not support play stream service
+2022-11-12 07:22:40.835 WARNING (stream_worker) [homeassistant.components.stream.worker] Audio stream not found
+2022-11-12 07:22:41.267 WARNING (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] Found duplicated MOOV Atom. Skipped it
+2022-11-12 07:22:41.271 ERROR (stream_worker) [libav.mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file
+2022-11-12 07:22:41.281 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_motion_event] Error from stream worker: Error demuxing stream: [Errno 1094995529] Invalid data found when processing input: 'https://de.business.smartcamera.api.io.mi.com/common/app/m3u8?data=2bwZRRI8nXNw431Wafn83SL9I4NBa7a0E0XKJ6EmMUk579Lt%2BITMv%2Bh1W0vmFoUTPy95EN%2B8lZw8GB3IjduDJ5LRdwO8%2FKLPLleI6ZZGSNRf%2FeWT1UAXPZBVNG3s%2F5GKmwtNmw8fqlQadHOZHR9fTOY3h70H&rc4_hash__=ycZMRixv5CQ4sQ1OLouhn16kRsEucrOmQkybIA%3D%3D&signature=%2Ff7xRqU9wjSA4naLaITztI7GIXA%3D&ssecurity=0Occ1UYsKpr%2BSat20XKn0g%3D%3D&_nonce=WXq%2BPfrRB%2FEBqED4&yetAnotherServiceToken=mIZ1Eg%2F%2B%2Fl81OxDgaK6A3Y14TDZPMOVKM0PsjASzmwKQsEEjl%2BFHA%2Bawe85Z7L2KjznPcA8cq3xcGHKHNjXaqHO6rqCoRtI6rXL24ozGVG4%2BPfVssBDlHMYxPxw1YF5bdOkpD2ZecGVey7PtD00kHy55Z7gcn2rnfNCz09TdGGE%3D'; last error log: [mov,mp4,m4a,3gp,3g2,mj2] stream 0, offset 0x936: partial file

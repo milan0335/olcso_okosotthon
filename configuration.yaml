@@ -18,6 +18,10 @@ camera:
     token: !secret xiaomi_vacuum_token
     username: !secret xiaomi_cloud_username
     password: !secret xiaomi_cloud_password
+    draw: ['all']
+    attributes:
+      - calibration_points
+      - rooms
 
 cloud:
 

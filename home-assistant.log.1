@@ -1,47 +1,71 @@
-2022-11-12 05:51:12.986 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-11-12 05:51:12.988 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miot which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-11-12 05:51:12.990 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_cloud_map_extractor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-11-12 05:51:37.495 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:51:37.530 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:51:38.253 ERROR (MainThread) [homeassistant.components.camera] Entity id already exists - ignoring: camera.xiaomi_cloud_map_extractor
-2022-11-12 05:52:14.746 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:52:14.756 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:52:33.270 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [548139070992] 
+2022-11-12 06:26:32.879 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-11-12 06:26:32.881 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miot which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-11-12 06:26:32.883 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_cloud_map_extractor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-11-12 06:26:54.091 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Unable to determine action @ data['action'][3]. Got None. (See ?, line ?). 
+2022-11-12 06:26:55.961 ERROR (MainThread) [homeassistant.components.camera] Entity id already exists - ignoring: camera.xiaomi_cloud_map_extractor
+2022-11-12 06:27:41.814 ERROR (MainThread) [homeassistant.helpers.entity] Update for vacuum.roidmi_v60_8a32_robot_cleaner fails
 Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 200, in handle_call_service
-    await hass.services.async_call(
-  File "/usr/src/homeassistant/homeassistant/core.py", line 1744, in async_call
-    task.result()
-  File "/usr/src/homeassistant/homeassistant/core.py", line 1781, in _execute_service
-    await cast(Callable[[ServiceCall], Awaitable[None]], handler.job.target)(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 208, in handle_service
-    await service.entity_service_call(
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 678, in entity_service_call
-    future.result()  # pop exception if have
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 943, in async_request_call
-    await coro
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 715, in _handle_entity_call
-    await result
-  File "/usr/src/homeassistant/homeassistant/components/vacuum/__init__.py", line 262, in async_clean_spot
-    await self.hass.async_add_executor_job(partial(self.clean_spot, **kwargs))
+  File "/usr/local/lib/python3.10/site-packages/miio/protocol.py", line 198, in _decode
+    decoded = quirk(decrypted).decode("utf-8")
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 527, in async_update_ha_state
+    await self.async_device_update()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 722, in async_device_update
+    raise exc
+  File "/config/custom_components/xiaomi_miot/vacuum.py", line 133, in async_update
+    await super().async_update()
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 1340, in async_update
+    results = await self.hass.async_add_executor_job(
   File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
     result = self.fn(*self.args, **self.kwargs)
-  File "/config/custom_components/xiaomi_miot/vacuum.py", line 218, in clean_spot
-    raise NotImplementedError()
-NotImplementedError
-2022-11-12 05:54:00.368 ERROR (MainThread) [homeassistant.components.camera] Timeout getting stream source
-2022-11-12 05:54:13.727 WARNING (SyncWorker_10) [custom_components.xiaomi_miot.camera] Mi 360° Home Security Camera 2K Pro Camera Control: stream address status invalid: 404 (Not Found)
-2022-11-12 05:55:10.997 ERROR (MainThread) [custom_components.xiaomi_miot.camera] Mi 360° Home Security Camera 2K Pro Camera Control: Got BrokenPipeError when close stream: -i "https://de29.livestreaming.io.mi.com/hlstranscoder/GCBkNWE1NmRiY2RlNWQ0MzIzYTE5ZDQ4ZGYxYjc0YWVhMhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8"
-2022-11-12 05:55:12.357 WARNING (stream_worker) [libav.https] HTTP error 404 Not Found
-2022-11-12 05:55:12.373 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found) https://de29.livestreaming.io.mi.com/hlstranscoder/GCBkNWE1NmRiY2RlNWQ0MzIzYTE5ZDQ4ZGYxYjc0YWVhMhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 05:55:22.703 WARNING (stream_worker) [libav.https] HTTP error 404 Not Found
-2022-11-12 05:55:22.712 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found) https://de29.livestreaming.io.mi.com/hlstranscoder/GCBkNWE1NmRiY2RlNWQ0MzIzYTE5ZDQ4ZGYxYjc0YWVhMhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 05:55:43.040 WARNING (stream_worker) [libav.https] HTTP error 404 Not Found
-2022-11-12 05:55:43.050 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found) https://de29.livestreaming.io.mi.com/hlstranscoder/GCBkNWE1NmRiY2RlNWQ0MzIzYTE5ZDQ4ZGYxYjc0YWVhMhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 05:56:13.385 WARNING (stream_worker) [libav.https] HTTP error 404 Not Found
-2022-11-12 05:56:13.398 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.chuangmi_021a04_d57e_camera_control] Error from stream worker: Error opening stream (HTTP_NOT_FOUND, Server returned 404 Not Found) https://de29.livestreaming.io.mi.com/hlstranscoder/GCBkNWE1NmRiY2RlNWQ0MzIzYTE5ZDQ4ZGYxYjc0YWVhMhgKX191bnVzZWRfXwA_H265transH264/playlist.m3u8
-2022-11-12 05:56:22.621 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:56:22.635 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:56:24.677 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:56:24.687 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: required key not provided @ data['action']. Got None. (See ?, line ?). 
-2022-11-12 05:56:38.422 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /homeassistant/restart request
+  File "/config/custom_components/xiaomi_miot/__init__.py", line 653, in get_properties_for_mapping
+    return self.get_properties(
+  File "/usr/local/lib/python3.10/site-packages/miio/device.py", line 240, in get_properties
+    values.extend(self.send(property_getter, _props[:max_properties]))
+  File "/usr/local/lib/python3.10/site-packages/miio/device.py", line 107, in send
+    return self._protocol.send(
+  File "/usr/local/lib/python3.10/site-packages/miio/miioprotocol.py", line 194, in send
+    m = Message.parse(data, token=self.token)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 288, in parse
+    return self.parse_stream(io.BytesIO(data), **contextkw)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 300, in parse_stream
+    return self._parsereport(stream, context, "(parsing)")
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 312, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 1981, in _parse
+    subobj = sc._parsereport(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 312, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 2439, in _parse
+    return self.subcon._parsereport(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 312, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 3987, in _parse
+    obj = self.subcon._parsereport(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 312, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 4265, in _parse
+    obj = self.subcon._parsereport(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 312, in _parsereport
+    obj = self._parse(stream, context, path)
+  File "/usr/local/lib/python3.10/site-packages/construct/core.py", line 698, in _parse
+    return self._decode(obj, context, path)
+  File "/usr/local/lib/python3.10/site-packages/miio/protocol.py", line 204, in _decode
+    _LOGGER.debug("Unable to parse json '%s': %s", decoded, ex)
+UnboundLocalError: local variable 'decoded' referenced before assignment
+2022-11-12 06:33:14.088 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Unable to determine action @ data['action'][3]. Got None. (See ?, line ?). 
+2022-11-12 06:33:16.458 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Unable to determine action @ data['action'][3]. Got None. (See ?, line ?). 
+2022-11-12 06:33:31.700 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/snitun/client/client_peer.py", line 137, in _handler
+    await self._multiplexer.ping()
+  File "/usr/local/lib/python3.10/site-packages/snitun/multiplexer/core.py", line 100, in ping
+    self._write_message(
+  File "/usr/local/lib/python3.10/site-packages/snitun/multiplexer/core.py", line 205, in _write_message
+    raise MultiplexerTransportClose() from None
+snitun.exceptions.MultiplexerTransportClose
+2022-11-12 06:33:31.705 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /homeassistant/restart request
