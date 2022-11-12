@@ -1,0 +1,572 @@
+title: Home
+views:
+  - path: default_view
+    title: Home
+    cards:
+      - show_state: false
+        show_name: false
+        camera_view: live
+        type: picture-entity
+        image: https://demo.home-assistant.io/stub_config/bedroom.png
+        camera_image: camera.chuangmi_021a04_d57e_camera_control
+        entity: camera.chuangmi_021a04_d57e_camera_control
+  - theme: Backend-selected
+    title: Vacuum cleaner
+    icon: mdi:robot-vacuum
+    cards:
+      - type: picture-elements
+        title: Roidmi EVE Plus
+        image: /local/roidmi-eve-plus.jpg
+        elements:
+          - type: icon
+            icon: mdi:play
+            tap_action:
+              action: call-service
+              service: vacuum.start
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+            style:
+              top: 95%
+              left: 25%
+              color: '#3090C7'
+          - type: icon
+            icon: mdi:pause
+            tap_action:
+              action: call-service
+              service: vacuum.pause
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+            style:
+              top: 95%
+              left: 35%
+              color: '#3090C7'
+          - type: icon
+            icon: mdi:stop
+            tap_action:
+              action: call-service
+              service: vacuum.stop
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+            style:
+              top: 95%
+              left: 45%
+              color: '#3090C7'
+          - type: icon
+            icon: mdi:home
+            tap_action:
+              action: call-service
+              service: vacuum.return_to_base
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+            style:
+              top: 95%
+              left: 55%
+              color: '#3090C7'
+          - type: icon
+            icon: mdi:crosshairs
+            tap_action:
+              action: call-service
+              service: vacuum.clean_spot
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+            style:
+              top: 95%
+              left: 65%
+              color: '#3090C7'
+          - type: icon
+            icon: mdi:bell-ring
+            tap_action:
+              action: call-service
+              service: vacuum.locate
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+            style:
+              top: 95%
+              left: 75%
+              color: '#3090C7'
+          - type: state-label
+            entity: sensor.vacuum_operation
+            style:
+              top: 8%
+              left: 1%
+              color: rgb(255, 255, 255)
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 90%
+              font-weight: bold
+              border-color: rgb(34, 154, 210)
+              background-color: '#3090C7'
+              border-radius: 6px
+          - type: state-label
+            entity: sensor.vacuum_accessories
+            style:
+              top: 8%
+              right: 1%
+              color: rgb(255, 255, 255)
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 90%
+              font-weight: bold
+              border-color: rgb(34, 154, 210)
+              background-color: '#3090C7'
+              border-radius: 6px
+          - type: state-label
+            entity: vacuum.roidmi_v60_8a32_robot_cleaner
+            tap-action:
+              action: more-info
+            style:
+              top: 10%
+              right: 38%
+              color: rgb(255, 255, 255)
+              transform: translate(0%,-50%)
+              font-family: Trebuchet MS
+              font-size: 150%
+              font-weight: bold
+              border-color: rgb(34, 154, 210)
+              border-radius: 6px
+              background-color: '#cccccc'
+          - type: state-label
+            entity: sensor.vacuum_total_cleaned_area
+            prefix: 'Total area: '
+            style:
+              top: 28%
+              right: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 76%
+              font-weight: bold
+              border-right-style: solid
+              border-color: rgb(34, 154, 210)
+          - type: state-label
+            entity: sensor.vacuum_total_cleaning_time
+            prefix: 'Total time: '
+            style:
+              top: 38%
+              right: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 76%
+              font-weight: bold
+              border-right-style: solid
+              border-color: rgb(34, 154, 210)
+          - type: state-label
+            entity: sensor.vacuum_cleaned_area
+            prefix: 'Area: '
+            style:
+              top: 48%
+              right: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 76%
+              font-weight: bold
+              border-right-style: solid
+              border-color: rgb(34, 154, 210)
+          - type: state-label
+            entity: sensor.vacuum_cleaning_time
+            prefix: 'Time: '
+            style:
+              top: 58%
+              right: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 76%
+              font-weight: bold
+              border-right-style: solid
+              border-color: rgb(34, 154, 210)
+          - type: state-label
+            prefix: 'Status: '
+            entity: sensor.vacuum_status_fix
+            style:
+              top: 28%
+              left: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 80%
+              font-weight: bold
+              border-left-style: solid
+              border-color: '#3090C7'
+          - type: state-label
+            prefix: 'Charge: '
+            entity: sensor.roidmi_v60_8a32_battery_level
+            style:
+              top: 38%
+              left: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 80%
+              font-weight: bold
+              border-left-style: solid
+              border-color: rgb(34, 154, 210)
+          - type: state-label
+            prefix: 'Speed: '
+            entity: sensor.vacuum_fan_speed
+            style:
+              top: 48%
+              left: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 80%
+              font-weight: bold
+              border-left-style: solid
+              border-color: rgb(34, 154, 210)
+          - type: state-label
+            entity: sensor.vacuum_cleaning_count
+            prefix: 'Cleaning number: '
+            style:
+              top: 58%
+              left: 1%
+              color: '#000000'
+              transform: translate(0%,-50%)
+              pointer-events: none
+              font-family: Trebuchet MS
+              font-size: 80%
+              font-weight: bold
+              border-left-style: solid
+              border-color: rgb(34, 154, 210)
+      - type: vertical-stack
+        cards:
+          - type: picture-glance
+            entities: []
+            camera_image: camera.xiaomi_cloud_map_extractor
+          - type: entities
+            entities:
+              - entity: script.vacuum_download_map
+      - type: entities
+        title: Room cleaning
+        show_header_toggle: false
+        entities:
+          - input_boolean.vacuum_room1
+          - input_boolean.vacuum_room2
+          - input_boolean.vacuum_room3
+          - input_boolean.vacuum_room4
+          - input_boolean.vacuum_room5
+          - input_boolean.vacuum_room6
+          - script.vacuum_start_clean
+          - type: divider
+          - script.vacuum_start_clean_all
+      - type: entities
+        title: Vacuum cleaner sensors
+        show_header_toggle: false
+        entities:
+          - sensor.vacuum_status_fix
+          - sensor.vacuum_fault
+          - sensor.vacuum_sweep_mode
+          - input_select.vacuum_mode
+          - input_select.vacuum_sweep_type
+          - binary_sensor.vacuum_mop
+          - input_select.vacuum_water_level
+          - input_boolean.vacuum_double_clean
+          - input_boolean.vacuum_edge_sweep
+          - input_number.vacuum_volume
+          - input_boolean.vacuum_mute
+          - input_boolean.vacuum_lidar_collision
+          - input_boolean.vacuum_led_switch
+          - input_boolean.vacuum_auto_boost
+          - sensor.vacuum_on
+      - type: entities
+        title: Station sensors
+        show_header_toggle: false
+        entities:
+          - sensor.vacuum_charging_state
+          - input_select.vacuum_work_station_freq
+          - input_boolean.vacuum_station_key
+          - input_boolean.vacuum_station_led
+          - sensor.vacuum_station_type
+      - type: entities
+        title: Expendable materials
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Brush from below
+          - sensor.roidmi_v60_8a32_brush_life_level
+          - sensor.roidmi_v60_8a32_brush_left_time
+          - script.vacuum_reset_brush_life_level
+          - type: section
+            label: Side brush
+          - sensor.roidmi_v60_8a32_brush_life_level_2
+          - sensor.roidmi_v60_8a32_brush_left_time_2
+          - script.vacuum_reset_brush_life_level_2
+          - type: section
+            label: Sensors
+          - sensor.roidmi_v60_8a32_brush_life_level_3
+          - sensor.roidmi_v60_8a32_brush_left_time_3
+          - script.vacuum_reset_brush_life_level_3
+          - type: section
+            label: HEPA filter
+          - sensor.roidmi_v60_8a32_filter_life_level
+          - sensor.roidmi_v60_8a32_filter_left_time
+          - script.vacuum_reset_filter_life_level
+  - theme: Backend-selected
+    title: test
+    path: test
+    badges: []
+    cards:
+      - type: custom:xiaomi-vacuum-map-card
+        entity: vacuum.roidmi_v60_8a32_robot_cleaner
+        vacuum_platform: al-one/hass-xiaomi-miot
+        map_source:
+          camera: camera.xiaomi_cloud_map_extractor
+        calibration_source:
+          camera: true
+        map_modes:
+          - name: Rooms
+            icon: mdi:floor-plan
+            run_immediately: false
+            coordinates_rounding: true
+            selection_type: ROOM
+            max_selections: 1
+            repeats_type: EXTERNAL
+            max_repeats: 5
+            service_call_schema:
+              service: xiaomi_miot.call_action
+            predefined_selections:
+              - id: '1'
+                icon:
+                  name: mdi:broom
+                  x: -199.99944232404232
+                  'y': 99.99983943998814
+                label:
+                  text: Lakótér
+                  x: -199.99944232404232
+                  'y': 99.99983943998814
+                  offset_y: 35
+                outline:
+                  - - -2824.9994814395905
+                    - -1325.0001817941666
+                  - - 2425.000596791506
+                    - -1325.0001817941666
+                  - - 2425.000596791506
+                    - 1524.9998606741428
+                  - - -2824.9994814395905
+                    - 1524.9998606741428
+              - id: '3'
+                icon:
+                  name: mdi:broom
+                  x: -3974.999498575926
+                  'y': 1324.9998576939106
+                label:
+                  text: Fürdő
+                  x: -3974.999498575926
+                  'y': 1324.9998576939106
+                  offset_y: 35
+                outline:
+                  - - -5074.999514967203
+                    - 174.9998405575753
+                  - - -2874.9994821846485
+                    - 174.9998405575753
+                  - - -2874.9994821846485
+                    - 2474.999874830246
+                  - - -5074.999514967203
+                    - 2474.999874830246
+              - id: '4'
+                icon:
+                  name: mdi:broom
+                  x: 3125.0006072223186
+                  'y': -0.00016205012798309326
+                label:
+                  text: Iroda
+                  x: 3125.0006072223186
+                  'y': -0.00016205012798309326
+                  offset_y: 35
+                outline:
+                  - - 1825.0005878508089
+                    - -1325.0001817941666
+                  - - 4425.000626593828
+                    - -1325.0001817941666
+                  - - 4425.000626593828
+                    - 1324.9998576939106
+                  - - 1825.0005878508089
+                    - 1324.9998576939106
+            variables: {}
+        two_finger_pan: false
+        map_locked: true
+        tiles:
+          - tile_id: battery_level
+            entity: vacuum.roidmi_v60_8a32_robot_cleaner
+            label: Battery
+            attribute: battery_level
+            icon: mdi:battery-charging-100
+            unit: '%'
+          - tile_id: fan_speed
+            entity: vacuum.roidmi_v60_8a32_robot_cleaner
+            label: Fan speed
+            attribute: fan_speed
+            icon: mdi:fan
+            translations:
+              silent: Silent
+              standard: Standard
+              medium: Medium
+              turbo: Turbo
+              auto: Auto
+              gentle: Gentle
+          - tile_id: status
+            attribute: vacuum.status_desc
+            label: Status
+            icon: mdi:robot-vacuum
+            entity: vacuum.roidmi_v60_8a32_robot_cleaner
+            precision: 0
+            translations:
+              starting: Starting
+              charger disconnected: Charger disconnected
+              idle: Idle
+              remote control active: Remote control active
+              cleaning: Cleaning
+              returning home: Returning home
+              manual mode: Manual mode
+              charging: Charging
+              charging problem: Charging problem
+              paused: Paused
+              spot cleaning: Spot cleaning
+              error: Error
+              shutting down: Shutting down
+              updating: Updating
+              docking: Docking
+              going to target: Going to target
+              zoned cleaning: Zoned cleaning
+              segment cleaning: Segment cleaning
+              emptying the bin: Emptying the bin
+              charging complete: Charging complete
+              device offline: Device offline
+        icons:
+          - icon: mdi:play
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: cleaning
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: error
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: returning
+            tooltip: Start
+            tap_action:
+              action: call-service
+              service: vacuum.start
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+          - icon: mdi:stop
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: docked
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: idle
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: error
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: paused
+            tooltip: Stop
+            tap_action:
+              action: call-service
+              service: vacuum.stop
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+          - icon: mdi:home-map-marker
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: docked
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                value_not: returning
+            tooltip: Return to base
+            tap_action:
+              action: call-service
+              service: vacuum.return_to_base
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+          - icon: mdi:fan-remove
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value: Silent
+            tooltip: Change fan speed
+            tap_action:
+              action: call-service
+              service: vacuum.set_fan_speed
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+                fan_speed: Basic
+          - icon: mdi:fan-speed-1
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value: Basic
+            tooltip: Change fan speed
+            tap_action:
+              action: call-service
+              service: vacuum.set_fan_speed
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+                fan_speed: Strong
+          - icon: mdi:fan-speed-2
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value: Strong
+            tooltip: Change fan speed
+            tap_action:
+              action: call-service
+              service: vacuum.set_fan_speed
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+                fan_speed: Full Speed
+          - icon: mdi:fan-speed-3
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value: Full Speed
+            tooltip: Change fan speed
+            tap_action:
+              action: call-service
+              service: vacuum.set_fan_speed
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+                fan_speed: Sweep
+          - icon: mdi:fan-alert
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value: Sweep
+            tooltip: Change fan speed
+            tap_action:
+              action: call-service
+              service: vacuum.set_fan_speed
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+                fan_speed: Silent
+          - icon: mdi:fan-alert
+            conditions:
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value_not: Silent
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value_not: Basic
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value_not: Strong
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value_not: Full Speed
+              - entity: vacuum.roidmi_v60_8a32_robot_cleaner
+                attribute: fan_speed
+                value_not: Sweep
+            tooltip: Change fan speed
+            tap_action:
+              action: call-service
+              service: vacuum.set_fan_speed
+              service_data:
+                entity_id: vacuum.roidmi_v60_8a32_robot_cleaner
+                fan_speed: Silent
